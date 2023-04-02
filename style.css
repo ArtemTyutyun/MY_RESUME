@@ -492,6 +492,17 @@
     margin-left: var(--Summary-1-margin-left);
 }
 
+.li-1,
+.li-2,
+.li-3,
+.li-4,
+.li-5,
+.li-6,
+.li-7 {
+  font-size: 16px;
+  font-style: 600;
+}
+
 .skills-parent {
 display: flex;
 }
@@ -660,52 +671,16 @@ display: flex;
     margin-right: var(--WE2-margin-right);
   }
 
-  .Name-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
+  .Dates,
+  .Name-3,
+  .Dates-1,
+  .Job-1,
+  .Project-1,
+  .Name,
+  .Name-2,
+  .Dates-2,
+  .Job-2,
   .Project-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-
-  .Name {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Project-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-
-  .Name-3 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates {
     font-size: 16px;
     font-style: 600;
   }
