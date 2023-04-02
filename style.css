@@ -605,7 +605,7 @@ display: flex;
     height: 392px;
   }
   
-  .Work {
+  .Head {
     width: 295px;
     height: 44px;
     font-family: "Inter";
@@ -660,52 +660,16 @@ display: flex;
     margin-right: var(--WE2-margin-right);
   }
 
-  .Name-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
+  .Dates,
+  .Name-3,
+  .Dates-1,
+  .Job-1,
+  .Project-1,
+  .Name,
+  .Name-2,
+  .Dates-2,
+  .Job-2,
   .Project-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-
-  .Name {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Project-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-
-  .Name-3 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates {
     font-size: 16px;
     font-style: 600;
   }
