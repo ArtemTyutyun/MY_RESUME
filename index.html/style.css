@@ -274,6 +274,17 @@
     margin-left: 55px;
 }
 
+.li-1,
+.li-2,
+.li-3,
+.li-4,
+.li-5,
+.li-6,
+.li-7 {
+  font-size: 16px;
+  font-style: 600;
+}
+
 .skills-parent {
 display: flex;
 }
