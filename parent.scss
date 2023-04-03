@@ -263,8 +263,6 @@
         }
 
         .skills-parent {
-            width: 621px;
-            height: 84px;
             display: flex;
         }
 
@@ -274,6 +272,12 @@
             line-height: 19px;
             color: #263036;
         }
+
+        .skills-3 {
+            width: 621px;
+            height: 84px;
+            @include margin(28px, 139px, 49px, 27px);
+          }
 
         .skills-2 {
             width: 278px;
@@ -285,8 +289,6 @@
         }
 
         .left-2 {
-            padding-left: 20px;
-            padding-right: 60px;
             @include left-right;
             @include font("inter", normal, 600, 16px);
             @include margin(28px, 27px, 49px, 55px);
