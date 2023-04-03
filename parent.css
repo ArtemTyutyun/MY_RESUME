@@ -1,3 +1,19 @@
+.my-theme .left {
+  background: #0fcaca;
+}
+
+.my-theme .right {
+  background: #a39c9c;
+}
+
+.main-theme .left {
+  background: #86A3B4;
+}
+
+.main-theme .right {
+  background: #FFFFFF;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,8 +23,7 @@
   border: 1px solid #000;
   display: flex;
 }
-
-.left {
+.parent .left {
   border: 1px solid #000;
   width: 385px;
   height: 1667px;
@@ -17,7 +32,6 @@
   z-index: 2;
   animation: blocks 0.5s linear;
 }
-
 @keyframes blocks {
   0% {
     margin-top: 50vh;
@@ -28,64 +42,54 @@
     opacity: 1;
   }
 }
-
-.right {
-  width: 1200px;
-  height: 1667px;
-  background: #ffffff;
-  z-index: 1;
-  animation: blocks 1s linear;
-}
-
-.name {
+.parent .left .name {
   margin-top: 58px;
   margin-right: 85px;
-  margin-bottom: 36px;
+  margin-bottom: 0px;
   margin-left: 40px;
 }
-
-.name-1 {
+.parent .left .name-1 {
   width: 118px;
   height: 48px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 40px;
   line-height: 48px;
   color: #ffffff;
-}
-
-.name-2 {
-  width: 260px;
-  height: 48px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 40px;
+}
+.parent .left .name-2 {
+  width: 260px;
+  height: 48px;
   line-height: 48px;
   color: #1c2e8c;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 40px;
 }
-
-.photo {
+.parent .left .div-photo {
+  width: 385px;
+  height: 292px;
+}
+.parent .left .photo {
   width: 385px;
   height: 292px;
   margin-top: 36px;
   margin-right: 0px;
   margin-bottom: 50px;
   margin-left: 0px;
-  animation: photo-animation 0s hover;
 }
-
-.photo:hover {
-  transform: scale(2);
-  margin-left: 12em;
+.parent .left .photo:hover {
+  transform: scale(1.7);
+  margin-left: 130px;
+  margin-top: 80px;
   box-shadow: 1px 1px 30px 5px grey;
 }
-
-.Contact {
+.parent .left .Contact {
   width: 124px;
   height: 39px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
@@ -96,25 +100,31 @@
   margin-bottom: 15px;
   margin-left: 41px;
 }
-
-.table-1 {
+.parent .left .table-1 {
+  margin-right: 54px;
+  margin-bottom: 31px;
+  margin-left: 42px;
   width: 289px;
   height: 0px;
   border: 6px solid #1e1e1e;
   margin-top: 15px;
-  margin-right: 54px;
-  margin-bottom: 31px;
-  margin-left: 42px;
 }
-
-.ul {
+.parent .left .table-2 {
+  margin-right: 52px;
+  margin-bottom: 23px;
+  margin-left: 44px;
+  width: 289px;
+  height: 0px;
+  border: 6px solid #1e1e1e;
+  margin-top: 15px;
+}
+.parent .left .ul {
   list-style: none;
 }
-
-.address-2 {
+.parent .left .address-2 {
   width: 97px;
   height: 29px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -125,11 +135,10 @@
   margin-bottom: 11px;
   margin-left: 41px;
 }
-
-.address-3 {
+.parent .left .address-3 {
   width: 141px;
   height: 19px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -140,11 +149,10 @@
   margin-bottom: 36px;
   margin-left: 40px;
 }
-
-.phone-2 {
+.parent .left .phone-2 {
   width: 74px;
   height: 29px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -155,11 +163,10 @@
   margin-bottom: 11px;
   margin-left: 41px;
 }
-
-.phone-3 {
+.parent .left .phone-3 {
   width: 132px;
   height: 19px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -170,11 +177,10 @@
   margin-bottom: 36px;
   margin-left: 40px;
 }
-
-.e-mail-2 {
+.parent .left .e-mail-2 {
   width: 74px;
   height: 29px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -185,327 +191,25 @@
   margin-bottom: 11px;
   margin-left: 42px;
 }
-
-.link {
+.parent .left .link {
   width: 198px;
+  line-height: 19px;
+  text-decoration: none;
   height: 19px;
-  font-family: "Inter";
+  color: #1c2e8c;
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
-  color: #1c2e8c;
-  text-decoration: none;
   margin-top: 11px;
   margin-right: 146px;
   margin-bottom: 36px;
   margin-left: 41px;
 }
-
-.Languages-2 {
-  width: 171px;
-  height: 39px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 32px;
-  line-height: 39px;
-  color: #263036;
-  margin-top: 36px;
-  margin-right: 171px;
-  margin-bottom: 15px;
-  margin-left: 43px;
-}
-
-.table-2 {
-  width: 289px;
-  height: 0px;
-  border: 6px solid #1e1e1e;
-  margin-top: 15px;
-  margin-right: 52px;
-  margin-bottom: 23px;
-  margin-left: 44px;
-}
-
-.Language-1 {
-  width: 139px;
-  height: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #1e1e1e;
-  margin-top: 23px;
-  margin-right: 204px;
-  margin-bottom: 15px;
-  margin-left: 42px;
-}
-
-.Language-2 {
-  width: 116px;
-  height: 24px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 20px;
-  line-height: 24px;
-  color: #1e1e1e;
-  margin-top: 15px;
-  margin-right: 227px;
-  margin-bottom: 530px;
-  margin-left: 42px;
-}
-
-.Summary-1 {
-  width: 167px;
-  height: 44px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #1e1e1e;
-  margin-top: 58px;
-  margin-right: 593px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.table-3 {
-  width: 659px;
-  height: 0px;
-  border: 5px solid #000000;
-  margin-top: 28px;
-  margin-right: 101px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.Summary-2 {
-  width: 706px;
-  height: 76px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #263036;
-  margin-top: 28px;
-  margin-right: 54px;
-  margin-bottom: 49px;
-  margin-left: 55px;
-}
-
-.skills-parent {
-  display: flex;
-}
-
-.left-2 {
-  width: 297px;
-  width: 297px;
-  height: 84px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #263036;
-  margin-top: 28px;
-  margin-right: 27px;
-  margin-bottom: 49px;
-  margin-left: 55px;
-}
-
-.right-2 {
-  width: 297px;
-  height: 84px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 19px;
-  color: #263036;
-  margin-top: 28px;
-  margin-right: 139px;
-  margin-bottom: 49px;
-  margin-left: 27px;
-}
-
-.skills-2 {
-  width: 278px;
-  height: 44px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #1e1e1e;
-  margin-top: 49px;
-  margin-right: 482px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.skills-3 {
-  width: 621px;
-  height: 84px;
-  margin-top: 28px;
-  margin-right: 139px;
-  margin-bottom: 49px;
-  margin-left: 27px;
-}
-
-.table-4 {
-  width: 659px;
-  height: 0px;
-  border: 5px solid #000000;
-  margin-top: 28px;
-  margin-right: 101px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.Work-Experience {
-  width: 706px;
-  height: 392px;
-}
-
-.Head {
-  width: 295px;
-  height: 44px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #1e1e1e;
-  margin-top: 49px;
-  margin-left: 55px;
-  margin-bottom: 28px;
-  margin-right: 465px;
-}
-
-.table-6 {
-  width: 659px;
-  height: 0px;
-  border: 5px solid #000000;
-  margin-top: 28px;
-  margin-left: 55px;
-  margin-bottom: 31px;
-  margin-right: 101px;
-}
-
-.Dates,
-.Name-3,
-.Dates-1,
-.Job-1,
-.Project-1,
-.Name,
-.Name-2,
-.Dates-2,
-.Job-2,
-.Project-2 {
-  font-size: 16px;
-  font-style: 600;
-}
-
-.WE1 {
-  width: 706px;
-  height: 133px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  margin-top: 31px;
-  margin-left: 55px;
-  margin-bottom: 15px;
-  margin-right: 54px;
-}
-
-.WE2 {
-  width: 706px;
-  height: 141px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 14px;
-  line-height: 17px;
-  color: #000000;
-  margin-top: 15px;
-  margin-left: 55px;
-  margin-bottom: 53px;
-  margin-right: 54px;
-  opacity: 70%;
-}
-
-.WE2:hover {
-  animation: We2 3s;
-  animation-fill-mode: forwards;
-}
-
-    @keyframes We2{
-      70% {
-        opacity: 70%;
-      }
-      80% {
-        opacity: 80%;
-      }
-      90% {
-        opacity: 90%;
-      }
-      100% {
-        opacity: 100%;
-      } 
-    }
-
-
-.Education {
-  width: 175px;
-  height: 44px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 600;
-  font-size: 36px;
-  line-height: 44px;
-  color: #1e1e1e;
-  margin-top: 53px;
-  margin-right: 585px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.table-5 {
-  width: 659px;
-  height: 0px;
-  border: 5px solid #000000;
-  margin-top: 28px;
-  margin-right: 101px;
-  margin-bottom: 28px;
-  margin-left: 55px;
-}
-
-.Education-2 {
-  width: 559px;
-  height: 57px;
-  font-family: "Inter";
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 19px;
-  color: #263036;
-  margin-top: 28px;
-  margin-right: 201px;
-  margin-bottom: 549px;
-  margin-left: 55px;
-}
-
-.Linkedin {
+.parent .left .Linkedin {
   width: 98px;
   height: 29px;
-  font-family: "Inter";
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
@@ -516,33 +220,288 @@
   margin-bottom: 11px;
   margin-left: 42px;
 }
-
-.link-2 {
+.parent .left .link-2 {
   width: 333px;
+  line-height: 19px;
+  text-decoration: none;
   height: 19px;
-  font-family: "Inter";
+  color: #1c2e8c;
+  font-family: "inter";
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
-  line-height: 19px;
-  color: #1c2e8c;
   margin-top: 11px;
   margin-right: 11px;
   margin-bottom: 36px;
   margin-left: 41px;
-  text-decoration: none;
 }
-
-.link-5 {
+.parent .left .Languages-2 {
+  width: 171px;
+  height: 39px;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 39px;
+  color: #263036;
+  margin-top: 36px;
+  margin-right: 171px;
+  margin-bottom: 15px;
+  margin-left: 43px;
+}
+.parent .left .Language-1 {
+  width: 139px;
+  height: 24px;
+  line-height: 24px;
+  color: #1e1e1e;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 23px;
+  margin-right: 204px;
+  margin-bottom: 15px;
+  margin-left: 42px;
+}
+.parent .left .Language-2 {
+  width: 116px;
+  height: 24px;
+  line-height: 24px;
+  color: #1e1e1e;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 227px;
+  margin-bottom: 530px;
+  margin-left: 42px;
+}
+.parent .right {
+  width: 1200px;
+  height: 1667px;
+  background: #ffffff;
+  z-index: 1;
+  animation: blocks 1s linear;
+}
+@keyframes blocks {
+  0% {
+    margin-top: 50vh;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0;
+    opacity: 1;
+  }
+}
+.parent .right .Summary-1 {
+  width: 167px;
+  height: 44px;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1e1e1e;
+  margin-top: 58px;
+  margin-right: 593px;
+  margin-bottom: 28px;
+  margin-left: 55px;
+}
+.parent .right .table-3,
+.parent .right .table-4,
+.parent .right .table-5 {
+  width: 659px;
+  height: 0px;
+  border: 5px solid #000000;
+  margin-top: 28px;
+  margin-right: 101px;
+  margin-bottom: 28px;
+  margin-left: 55px;
+}
+.parent .right .Summary-2 {
+  width: 706px;
+  height: 76px;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #263036;
+  margin-top: 28px;
+  margin-right: 54px;
+  margin-bottom: 49px;
+  margin-left: 55px;
+}
+.parent .right .skills-parent {
+  width: 621px;
+  height: 84px;
+  display: flex;
+}
+.parent .right .skills-2 {
+  width: 278px;
+  height: 44px;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1e1e1e;
+  margin-top: 49px;
+  margin-right: 482px;
+  margin-bottom: 28px;
+  margin-left: 55px;
+}
+.parent .right .left-2 {
+  padding-left: 20px;
+  padding-right: 60px;
+  width: 297px;
+  height: 84px;
+  line-height: 19px;
+  color: #263036;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 28px;
+  margin-right: 27px;
+  margin-bottom: 49px;
+  margin-left: 55px;
+}
+.parent .right .right-2 {
+  width: 297px;
+  height: 84px;
+  line-height: 19px;
+  color: #263036;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  margin-top: 28px;
+  margin-right: 139px;
+  margin-bottom: 49px;
+  margin-left: 27px;
+}
+.parent .right .Work-Experience {
+  width: 706px;
+  height: 392px;
+}
+.parent .right .Head {
+  width: 295px;
+  height: 44px;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #1e1e1e;
+  margin-top: 49px;
+  margin-right: 465px;
+  margin-bottom: 31px;
+  margin-left: 55px;
+}
+.parent .right .table-6 {
+  width: 659px;
+  height: 0px;
+  border: 5px solid #000000;
+  margin-top: 28px;
+  margin-right: 101px;
+  margin-bottom: 31px;
+  margin-left: 55px;
+}
+.parent .right .WE1 {
+  height: 133px;
+  width: 706px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 28px;
+  margin-right: 101px;
+  margin-bottom: 31px;
+  margin-left: 55px;
+}
+.parent .right .WE2 {
+  height: 141px;
+  opacity: 70%;
+  width: 706px;
+  line-height: 17px;
+  color: #000000;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  margin-top: 15px;
+  margin-right: 54px;
+  margin-bottom: 53px;
+  margin-left: 55px;
+}
+.parent .right .WE2:hover {
+  animation: We2 3s;
+  animation-fill-mode: forwards;
+}
+@keyframes We2 {
+  70% {
+    opacity: 70%;
+  }
+  80% {
+    opacity: 80%;
+  }
+  90% {
+    opacity: 90%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+.parent .right .Name,
+.parent .right .Name-2,
+.parent .right .Name-3,
+.parent .right .Dates-1,
+.parent .right .Dates-2,
+.parent .right .Job-1,
+.parent .right .Job-2,
+.parent .right .Project-1,
+.parent .right .Project-2 {
+  font-size: 16px;
+  font-style: 600;
+}
+.parent .right .Education {
+  width: 175px;
+  height: 44px;
+  color: #1e1e1e;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  margin-top: 53px;
+  margin-right: 585px;
+  margin-bottom: 28px;
+  margin-left: 55px;
+}
+.parent .right .Education-2 {
+  width: 559px;
+  height: 57px;
+  color: #263036;
+  font-family: "inter";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  margin-top: 28px;
+  margin-right: 201px;
+  margin-bottom: 549px;
+  margin-left: 55px;
+}
+.parent .right .link-5 {
   color: #00f;
   text-decoration: underline;
 }
-
-.link-5:hover {
+.parent .right .link-5:hover {
   text-decoration: none;
 }
-
-.link-5:visited {
+.parent .right .link-5:visited {
   color: #005;
   text-decoration: underline;
-}
+}/*# sourceMappingURL=parent.css.map */
