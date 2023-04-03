@@ -1,549 +1,292 @@
-* {
+.form {
+    animation: form-block 5s; 
+    position: fixed;
+  }
+  
+  @keyframes form-block {
+    from {
+      transform: scale(200%);
+    
+    }
+    to {
+    position: fixed;
+    }
+  }
+  
+  .header {
+    margin-top: 20px;
+    margin-left: 5px;
+    margin-bottom: 79,9%;
+    animation: header-block 5s;
+    position: fixed;
+  }
+  
+  @keyframes header-block {
+    from {
+      transform: scale(200%);
+    
+    }
+    to {
+    position: fixed;
+    }
+  }
+  
+  
+  
+  
+  
+  
+  input,
+  select,
+  textarea {
+    appearance: none;
+    background-color: transparent;
     margin: 0;
     padding: 0;
+    border: none;
   }
   
-  .parent {
-    border: 1px solid #000;
-    display: flex;
+  input,
+  select,
+  textarea {
+    border: 2px solid #333;
+    border-radius: 14px;
   }
   
-  .left {
-    border: 1px solid #000;
-    width: 385px;
-    height: 1667px;
-    background: #86a3b4;
-    box-shadow: 2px 1px 15px grey;
-    z-index: 2;
+  table,
+  th,
+  td {
+    padding: 7px;
+    border-collapse: collapse;
+    border: 2px solid #333;
   }
   
-  .right {
-    width: 1200px;
-    height: 1667px;
-    background: #ffffff;
-    z-index: 1;
+  input[type="text"] {
+    cursor: text;
   }
   
-  .name {
-    margin-top: 58px;
-    margin-right: 85px;
-    margin-bottom: 36px;
-    margin-left: 40px;
+  textarea {
+    cursor: text;
   }
   
-  .name-1 {
-    width: 118px;
-    height: 48px;
-    font-family: "Inter";
-    font-style: normal;
+  input[type="submit"] {
+    color: white;
+    background-color: blue;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:enabled {
+    color: white;
+    background-color: blue;
+  }
+  
+  input[type="submit"]:hover {
+    color: white;
+    background-color: darkblue;
+  }
+  
+  input[type="submit"]:disabled {
+    color: white;
+    background-color: cornflowerblue;
+  }
+  
+  .form {
+    max-width: 1024px;
+    height: auto;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  input[type="text"]:invalid {
+    border-color: red;
+  }
+  
+  input[type="text"]:valid {
+    border-color: green;
+  }
+  
+  select[type="checkbox"] {
+    cursor: pointer;
+    width: 150px;
+  }
+  
+  select[type="checkbox"]:invalid {
+    border-color: red;
+  }
+  
+  select[type="checkbox"]:valid {
+    border-color: green;
+  }
+  
+  .Hire-me {
+    font-size: xx-large;
     font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
-    color: #ffffff;
-  }
-  
-  .name-2 {
-    width: 260px;
-    height: 48px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 48px;
-    color: #1c2e8c;
-  }
-  
-  .photo {
-    width: 385px;
-    height: 292px;
-    margin-top: 36px;
-    margin-right: 0px;
-    margin-bottom: 50px;
-    margin-left: 0px;
-  }
-  
-  .photo:hover {
-    transform: scale(1.7);
-    margin-left: 130px;
-    margin-top: 80px;
-    box-shadow: 1px 1px 30px 5px grey;
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-right: 83vh;
   }
   
   .Contact {
-    width: 124px;
-    height: 39px;
-    font-family: "Inter";
-    font-style: normal;
+    font-size: x-large;
     font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    color: #263036;
-    margin-top: 50px;
-    margin-right: 220px;
+    margin-top: 20px;
+    margin-left: 5px;
     margin-bottom: 15px;
-    margin-left: 41px;
+    margin-right: 73vh;
   }
   
-  .table-1 {
-    width: 289px;
-    height: 0px;
-    border: 6px solid #1e1e1e;
-    margin-top: 15px;
-    margin-right: 54px;
-    margin-bottom: 31px;
-    margin-left: 42px;
+  .table {
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-bottom: 79,9%;
+    margin-right: 75vh;
+  
   }
   
-  .ul {
-    list-style: none;
-  }
-  
-  .address-2 {
-    width: 97px;
-    height: 29px;
-    font-family: "Inter";
-    font-style: normal;
+  .th-1 {
+    font-size: large;
     font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #263036;
-    margin-top: 31px;
-    margin-right: 247px;
-    margin-bottom: 11px;
-    margin-left: 41px;
   }
   
-  .address-3 {
-    width: 141px;
-    height: 19px;
-    font-family: "Inter";
-    font-style: normal;
+  .th-2 {
+    font-size: large;
     font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 11px;
-    margin-right: 204px;
-    margin-bottom: 36px;
-    margin-left: 40px;
   }
   
-  .phone-2 {
-    width: 74px;
-    height: 29px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #263036;
-    margin-top: 36px;
-    margin-right: 270px;
-    margin-bottom: 11px;
-    margin-left: 41px;
+  select {
+    background: url("./check mark.png") no-repeat center right;
   }
   
-  .phone-3 {
-    width: 132px;
-    height: 19px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 11px;
-    margin-right: 213px;
-    margin-bottom: 36px;
-    margin-left: 40px;
+  .legend {
+    text-align: center;
   }
   
-  .e-mail-2 {
-    width: 74px;
-    height: 29px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #263036;
-    margin-top: 36px;
-    margin-right: 269px;
-    margin-bottom: 11px;
-    margin-left: 42px;
+  textarea:invalid {
+    border-color: red;
   }
   
-  .link {
-    width: 198px;
-    height: 19px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1c2e8c;
-    text-decoration: none;
-    margin-top: 11px;
-    margin-right: 146px;
-    margin-bottom: 36px;
-    margin-left: 41px;
+  textarea[type="checkbox"]:valid {
+    border-color: green;
   }
   
-  .Languages-2 {
-    width: 171px;
-    height: 39px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 39px;
-    color: #263036;
-    margin-top: 36px;
-    margin-right: 171px;
-    margin-bottom: 15px;
-    margin-left: 43px;
-  }
-  
-  .table-2 {
-    width: 289px;
-    height: 0px;
-    border: 6px solid #1e1e1e;
-    margin-top: 15px;
-    margin-right: 52px;
-    margin-bottom: 23px;
-    margin-left: 44px;
-  }
-  
-  .Language-1 {
-    width: 139px;
-    height: 24px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #1e1e1e;
-    margin-top: 23px;
-    margin-right: 204px;
-    margin-bottom: 15px;
-    margin-left: 42px;
-  }
-  
-  .Language-2 {
-    width: 116px;
-    height: 24px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 24px;
-    color: #1e1e1e;
-    margin-top: 15px;
-    margin-right: 227px;
-    margin-bottom: 530px;
-    margin-left: 42px;
-  }
-  
-  .Summary-1 {
-    width: 167px;
-    height: 44px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    color: #1e1e1e;
-    margin-top: 58px;
-    margin-right: 593px;
-    margin-bottom: 28px;
-    margin-left: 55px;
-  }
-  
-  .table-3 {
-    width: 659px;
-    height: 0px;
-    border: 5px solid #000000;
-    margin-top: 28px;
-    margin-right: 101px;
-    margin-bottom: 28px;
-    margin-left: 55px;
-  }
-  
-  .Summary-2 {
-    width: 706px;
-    height: 76px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 28px;
-    margin-right: 54px;
-    margin-bottom: 49px;
-    margin-left: 55px;
-  }
-  
-  .skills-parent {
+  label,
+  textarea,
+  input[type="submit"] {
     display: flex;
   }
   
-  .left-2 {
-    width: 297px;
-    width: 297px;
-    height: 84px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 28px;
-    margin-right: 27px;
+  .message:invalid + .error {
+    display: block;
+  }
+  
+  .error {
+    display: none;
+    color: red;
+    margin-top: 1px;
+    margin-left: 3px;
+    margin-bottom: -3px;
+  }
+  
+  .message:valid ~ .success {
+    display: block;
+  }
+  
+  .message:valid {
+    margin-bottom: 34px;
+  }
+  
+  .success {
+    display: none;
+    color: green;
+    margin-top: -33px;
+    margin-bottom: -3px;
+  }
+  
+  .Description-2:invalid + .error-2 {
+    display: block;
+  }
+  
+  .error-2 {
+    display: none;
+    color: red;
+    margin-bottom: 30px;
+    margin-top: 1px;
+  }
+  
+  .Description-2:valid ~ .success-2 {
+    display: block;
+  }
+  
+  .success-2 {
+    display: none;
+    color: green;
+    margin-top: -11px;
+    margin-bottom: -7px;
+  }
+  
+  .Description-2:valid {
     margin-bottom: 49px;
-    margin-left: 55px;
   }
   
-  .right-2 {
-    width: 297px;
-    height: 84px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 28px;
-    margin-right: 139px;
-    margin-bottom: 49px;
-    margin-left: 27px;
+  .result {
+    width: 95%;
+    text-align: right;
+    margin-top: -70px;
+    padding-right: 10px;
+    color: #333;
   }
   
-  .skills-2 {
-    width: 278px;
-    height: 44px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    color: #1e1e1e;
-    margin-top: 49px;
-    margin-right: 482px;
-    margin-bottom: 28px;
-    margin-left: 55px;
+  .Description-2 {
+    margin-bottom: 0px;
   }
   
-  .skills-3 {
-    width: 621px;
-    height: 84px;
-    margin-top: 28px;
-    margin-right: 139px;
-    margin-bottom: 49px;
-    margin-left: 27px;
+  .message {
+    margin-top: 8px;
   }
   
-  .table-4 {
-    width: 659px;
-    height: 0px;
-    border: 5px solid #000000;
-    margin-top: 28px;
-    margin-right: 101px;
-    margin-bottom: 28px;
-    margin-left: 55px;
+  .Description {
+    margin-bottom: -8px;
   }
   
-  .Work-Experience {
-    width: 706px;
-    height: 392px;
+  .work-type {
+    margin-top: 7px;
+    margin-bottom: 30px;
   }
   
-  .Head {
-    width: 295px;
-    height: 44px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    color: #1e1e1e;
-    margin-top: 49px;
-    margin-left: 55px;
-    margin-bottom: 28px;
-    margin-right: 465px;
+  select[type="checkbox"] {
+    margin-top: 27px;
+    margin-left: -73px;
   }
   
-  .table-6 {
-    width: 659px;
-    height: 0px;
-    border: 5px solid #000000;
-    margin-top: 28px;
-    margin-left: 55px;
-    margin-bottom: 31px;
-    margin-right: 101px;
+  .message-2:invalid ~ .error-3 {
+    display: block;
   }
   
-  .WE1 {
-    width: 706px;
-    height: 133px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 31px;
-    margin-left: 55px;
-    margin-bottom: 15px;
-    margin-right: 54px;
-  }
-  
-  .Name {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Project-1 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .WE2 {
-    width: 706px;
-    height: 141px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 14px;
-    line-height: 17px;
-    color: #000000;
-    margin-top: 15px;
-    margin-left: 55px;
-    margin-bottom: 53px;
-    margin-right: 54px;
-    opacity: 70%;
-  }
-  
-  .WE2:hover {
-      opacity: 100%;
-  }
-  
-  .Name-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Dates-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Job-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Project-2 {
-    font-size: 16px;
-    font-style: 600;
-  }
-  
-  .Education {
-    width: 175px;
-    height: 44px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    color: #1e1e1e;
-    margin-top: 53px;
-    margin-right: 585px;
-    margin-bottom: 28px;
-    margin-left: 55px;
-  }
-  
-  .table-5 {
-    width: 659px;
-    height: 0px;
-    border: 5px solid #000000;
-    margin-top: 28px;
-    margin-right: 101px;
-    margin-bottom: 28px;
-    margin-left: 55px;
-  }
-  
-  .Education-2 {
-    width: 559px;
-    height: 57px;
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 19px;
-    color: #263036;
-    margin-top: 28px;
-    margin-right: 201px;
-    margin-bottom: 549px;
-    margin-left: 55px;
-  }
-  
-  .Name-3 {
-    font-size: 16px;
-    font-style: 600;
-  }
-
-  .Linkedin {
-    width: 98px;
-    height: 29px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 29px;
-    color: #263036;
-    margin-top: 36px;
-    margin-right: 245px;
+  .error-3 {
+    display: none;
+    color: red;
+    margin-top: -29px;
     margin-bottom: 11px;
-    margin-left: 42px;
-    }
-    
-    .link-2 {
-    width: 333px;
-    height: 19px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 16px;
-    line-height: 19px;
-    color: #1C2E8C;
-    margin-top: 11px;
-    margin-right: 11px;
-    margin-bottom: 36px;
-    margin-left: 41px;
-    text-decoration: none;
-    }
-
-    .link-5 {
-      color: #00f;
-      text-decoration: underline;
   }
   
-  .link-5:hover {
-      text-decoration: none;
+  .submit-2 {
+    margin-top: -15px;
   }
   
-  .link-5:visited {
-      color: #005;
-      text-decoration: underline;
+  .Description-2:valid {
+    border-color: green;
   }
+  
+  .Description-2:active {
+    border-color: lightblue;
+  }
+  
+  select {
+    background: url("./photo.png") no-repeat center right;
+  }
+  
