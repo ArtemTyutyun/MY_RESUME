@@ -3,7 +3,7 @@
     position: fixed;
   }
   
-  @keyframes form-blocks {
+  @keyframes form-block {
     from {
       transform: scale(200%);
     
@@ -21,7 +21,7 @@
     position: fixed;
   }
   
-  @keyframes header-blocks {
+  @keyframes header-block {
     from {
       transform: scale(200%);
     
