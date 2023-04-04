@@ -2,10 +2,8 @@
     animation: form-block 5s; 
     position: fixed;
   }
-
   
-  
-  @keyframes form-block {
+  @keyframes form-blocks {
     from {
       transform: scale(200%);
     
@@ -18,12 +16,11 @@
   .header {
     margin-top: 20px;
     margin-left: 5px;
-    margin-bottom: 79,9%;
     animation: header-block 5s;
     position: fixed;
   }
   
-  @keyframes header-block {
+  @keyframes header-blocks {
     from {
       transform: scale(200%);
     
@@ -32,7 +29,12 @@
     position: fixed;
     }
   }
-
+  
+  
+  
+  
+  
+  
   input,
   select,
   textarea {
@@ -47,7 +49,7 @@
   select,
   textarea {
     border: 2px solid #333;
-    border-radius: 5px;
+    border-radius: 14px;
   }
   
   table,
@@ -145,18 +147,21 @@
   
   }
   
-  .th-1,
-  .th-2  {
+  .th-1 {
     font-size: large;
     font-weight: 600;
   }
   
+  .th-2 {
+    font-size: large;
+    font-weight: 600;
+  }
   
-  select[type="checkbox"] {
+  select {
     background: url("./check-mark.png") no-repeat center right 5px;
   }
   
-  legend {
+  .legend {
     text-align: center;
   }
   
@@ -234,15 +239,11 @@
     padding-right: 10px;
     color: #333;
   }
-
-  .email-4 {
-    margin-bottom: -8px;
-  }
   
   .Description-2 {
     margin-bottom: 0px;
   }
-
+  
   .Description {
     margin-bottom: -8px;
   }
@@ -280,16 +281,64 @@
     border-color: lightblue;
   }
 
+  .email-4,
+  .Username-2,
+  .worktype,
+  .Password-2,
+  .Description-5{
+    font-size: medium;
+    font-weight: 300;
+  }
+
+  .email-4{
+    margin-bottom: -8px;
+  }
+
   input,
   select,
   textarea{
     padding: 3px;
   }
 
-  .email-4,
-  .worktype,
-  .Description-5{
-    font-size: medium;
-    font-weight: 300;
+  .Forgot {
+    color: #00f;
+    margin-left: 100px;
+    text-decoration: underline;
+  }
+
+  .Forgot:hover {
+    text-decoration: none;
   }
   
+  .Forgot:visited {
+    color: #005;
+    text-decoration: underline;
+  }
+
+  .Username-2 {
+    margin-bottom: 10px;
+  }
+
+  .Password-2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .pls {
+    margin-top: 2px;
+    display: none;
+    color: red;
+  }
+
+ .Password:invalid + .pls {
+  display: block;
+ }
+
+ .Password:valid {
+  margin-bottom: 20px;
+  border-color: green;
+ }
+
+ .Password:invalid {
+  border-color: red;
+ }
