@@ -30,7 +30,12 @@
     position: fixed;
     }
   }
-
+  
+  
+  
+  
+  
+  
   input,
   select,
   textarea {
@@ -143,15 +148,18 @@
   
   }
   
-  .th-1,
-  .th-2  {
+  .th-1 {
     font-size: large;
     font-weight: 600;
   }
   
+  .th-2 {
+    font-size: large;
+    font-weight: 600;
+  }
   
-  select[type="checkbox"] {
-    background: url("./check-mark.png") no-repeat center right 5px;
+  select {
+    background: url("./check mark.png") no-repeat center right;
   }
   
   .legend {
@@ -232,15 +240,11 @@
     padding-right: 10px;
     color: #333;
   }
-
-  .email-4 {
-    margin-bottom: -8px;
-  }
   
   .Description-2 {
     margin-bottom: 0px;
   }
-
+  
   .Description {
     margin-bottom: -8px;
   }
@@ -279,7 +283,20 @@
   }
   
   select {
-    background: url("./photo.png") no-repeat center right;
+    background: url("./check mark.png") no-repeat center right 5px;
+  }
+
+  .email-4,
+  .Username-2,
+  .worktype,
+  .Password-2,
+  .Description-5{
+    font-size: medium;
+    font-weight: 300;
+  }
+
+  .email-4{
+    margin-bottom: -8px;
   }
 
   input,
@@ -288,10 +305,49 @@
     padding: 3px;
   }
 
-  .email-4,
-  .worktype,
-  .Description-5{
-    font-size: medium;
-    font-weight: 300;
+  .Forgot {
+    color: #00f;
+    margin-left: 100px;
+    text-decoration: underline;
+  }
+
+  .Forgot:hover {
+    text-decoration: none;
   }
   
+  .Forgot:visited {
+    color: #005;
+    text-decoration: underline;
+  }
+
+  .Username-2 {
+    margin-bottom: 10px;
+  }
+
+  .Password-2{
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .pls {
+    margin-top: 2px;
+    display: none;
+    color: red;
+  }
+
+ .Password:invalid + .pls {
+  display: block;
+ }
+
+ .Password:valid {
+  margin-bottom: 20px;
+  border-color: green;
+ }
+
+ .Password:invalid {
+  border-color: red;
+ }
+
+
+ 
+
