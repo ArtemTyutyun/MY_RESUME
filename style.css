@@ -2,6 +2,8 @@
     animation: form-block 5s; 
     position: fixed;
   }
+
+  
   
   @keyframes form-block {
     from {
@@ -45,7 +47,7 @@
   select,
   textarea {
     border: 2px solid #333;
-    border-radius: 14px;
+    border-radius: 5px;
   }
   
   table,
@@ -154,7 +156,7 @@
     background: url("./check-mark.png") no-repeat center right 5px;
   }
   
-  .legend {
+  legend {
     text-align: center;
   }
   
@@ -276,10 +278,6 @@
   
   .Description-2:active {
     border-color: lightblue;
-  }
-  
-  select {
-    background: url("./photo.png") no-repeat center right;
   }
 
   input,
