@@ -3,7 +3,7 @@
     position: fixed;
   }
   
-  @keyframes form-block {
+  @keyframes form-blocks {
     from {
       transform: scale(200%);
     
@@ -21,7 +21,7 @@
     position: fixed;
   }
   
-  @keyframes header-block {
+  @keyframes header-blocks {
     from {
       transform: scale(200%);
     
@@ -30,12 +30,7 @@
     position: fixed;
     }
   }
-  
-  
-  
-  
-  
-  
+
   input,
   select,
   textarea {
@@ -148,18 +143,15 @@
   
   }
   
-  .th-1 {
+  .th-1,
+  .th-2  {
     font-size: large;
     font-weight: 600;
   }
   
-  .th-2 {
-    font-size: large;
-    font-weight: 600;
-  }
   
-  select {
-    background: url("./check mark.png") no-repeat center right;
+  select[type="checkbox"] {
+    background: url("./check-mark.png") no-repeat center right 5px;
   }
   
   .legend {
@@ -240,15 +232,15 @@
     padding-right: 10px;
     color: #333;
   }
+
+  .email-4 {
+    margin-bottom: -8px;
+  }
   
   .Description-2 {
     margin-bottom: 0px;
   }
-  
-  .message {
-    margin-top: 8px;
-  }
-  
+
   .Description {
     margin-bottom: -8px;
   }
@@ -288,5 +280,18 @@
   
   select {
     background: url("./photo.png") no-repeat center right;
+  }
+
+  input,
+  select,
+  textarea{
+    padding: 3px;
+  }
+
+  .email-4,
+  .worktype,
+  .Description-5{
+    font-size: medium;
+    font-weight: 300;
   }
   
