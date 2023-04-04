@@ -1,4 +1,10 @@
-.all {
+.form {
+  position: fixed;
+}
+
+.header {
+  margin-top: 20px;
+  margin-left: 30%;
   position: fixed;
 }
 
@@ -16,7 +22,7 @@ input,
 select,
 textarea {
   border: 2px solid #333;
-  border-radius: 14px;
+  border-radius: 5px;
 }
 
 table,
@@ -59,6 +65,12 @@ input[type="submit"]:disabled {
 .form {
   max-width: 1024px;
   height: auto;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 input[type="text"]:invalid {
@@ -85,47 +97,42 @@ select[type="checkbox"]:valid {
 .Hire-me {
   font-size: xx-large;
   font-weight: 600;
+  margin-top: 40px;
+  margin-left: 5px;
+  margin-bottom: 10px;
+  margin-right: 83vh;
 }
 
 .Contact {
+  font-size: x-large;
+  font-weight: 600;
+  margin-top: 20px;
+  margin-left: 5px;
+  margin-bottom: 15px;
+  margin-right: 73vh;
+}
+
+.table {
+  margin-top: 10px;
+  margin-left: 5px;
+  margin-bottom: 79,9%;
+  margin-right: 75vh;
+
+}
+
+.th-1,
+.th-2  {
   font-size: large;
   font-weight: 600;
 }
 
-.th-1 {
-  font-size: large;
-  font-weight: 600;
-}
 
-.th-2 {
-  font-size: large;
-  font-weight: 600;
-}
-
-select {
-  background: url("./check mark.png") no-repeat center right 5px;
+select[type="checkbox"] {
+  background: url("./check-mark.png") no-repeat center right 5px;
 }
 
 .legend {
   text-align: center;
-  font-size: large;
-  font-weight: 300;
-}
-
-.E-mail {
-  font-size: large;
-  font-weight: 300;
-}
-
-.Description {
-  margin-bottom: -8px;
-  font-size: large;
-  font-weight: 300;
-}
-
-.Work--type {
-  font-size: large;
-  font-weight: 300;
 }
 
 textarea:invalid {
@@ -142,23 +149,6 @@ input[type="submit"] {
   display: flex;
 }
 
-.header {
-  margin-top: 20px;
-  margin-left: 5px;
-  margin-bottom: 79, 9%;
-  position: fixed;
-}
-
-.form {
-  position: fixed;
-  padding: 50px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-}
-
 .message:invalid + .error {
   display: block;
 }
@@ -169,8 +159,6 @@ input[type="submit"] {
   margin-top: 1px;
   margin-left: 3px;
   margin-bottom: -3px;
-  font-size: 100%;
-  font-weight: 300;
 }
 
 .message:valid ~ .success {
@@ -186,10 +174,6 @@ input[type="submit"] {
   color: green;
   margin-top: -33px;
   margin-bottom: -3px;
-  font-size: 100%;
-  font-weight: 300;
-  font-size: 100%;
-  font-weight: 300;
 }
 
 .Description-2:invalid + .error-2 {
@@ -201,8 +185,6 @@ input[type="submit"] {
   color: red;
   margin-bottom: 30px;
   margin-top: 1px;
-  font-size: 100%;
-  font-weight: 300;
 }
 
 .Description-2:valid ~ .success-2 {
@@ -214,8 +196,6 @@ input[type="submit"] {
   color: green;
   margin-top: -11px;
   margin-bottom: -7px;
-  font-size: 100%;
-  font-weight: 300;
 }
 
 .Description-2:valid {
@@ -230,12 +210,8 @@ input[type="submit"] {
   color: #333;
 }
 
-.Description-2 {
-  margin-bottom: 0px;
-}
-
 .message {
-  margin-top: 8px;
+  margin-top: 7px;
 }
 
 .work-type {
@@ -245,28 +221,26 @@ input[type="submit"] {
 
 select[type="checkbox"] {
   margin-top: 27px;
-  margin-left: -80px;
-  padding: 3px;
+  margin-left: -70px;
 }
 
-select[type="checkbox"]:valid ~ .success-3 {
+.message-2:invalid ~ .error-3 {
   display: block;
 }
 
-.success-3 {
+.error-3 {
   display: none;
-  color: green;
-  margin-top: -28px;
-  margin-bottom: 10px;
-  font-size: 100%;
-  font-weight: 300;
+  color: red;
+  margin-top: -29px;
+  margin-bottom: 11px;
 }
 
 .submit-2 {
   margin-top: -15px;
-  padding: 3px;
-  font-size: small;
-  font-weight: 300;
+}
+
+.Description-5 {
+  margin-bottom: -10px;
 }
 
 .Description-2:valid {
@@ -275,4 +249,17 @@ select[type="checkbox"]:valid ~ .success-3 {
 
 .Description-2:active {
   border-color: lightblue;
+}
+
+input,
+select,
+textarea{
+  padding: 3px;
+}
+
+.email-4,
+.worktype,
+.Description-5{
+  font-size: medium;
+  font-weight: 300;
 }
